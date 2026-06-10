@@ -85,3 +85,29 @@
       font-size: 10px;
       line-height: 16px;
 }
+@media screen and (max-width:576px) {
+
+      .navbar, .nav-links {
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            
+      }
+      .banner, .navbar {
+        width: 100vw;
+        margin-bottom: 20px;
+        
+      }
+          .banner-content {
+            width: 100vw;
+            margin-bottom: 20px;
+            line-height: 55px;
+          }
+          .banner-img {
+            width: 100vw;
+            height: auto;
+          }
+}
