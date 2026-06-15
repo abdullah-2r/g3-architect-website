@@ -132,9 +132,7 @@
 /* ---------------------------------------------------------------------- */
 
 /* --------------------------------some-facts section---------------------- */
-.some-facts {
-      height: 100vh;
-}
+
 
 .fact-description {
       max-width: 450px;
@@ -173,8 +171,24 @@
 }
 /* -------------------------------------------------------------------- */
 /* --------------------------------- SPONSOR-SECTION ----------------- */
-
-
+.sponsor-info {
+      max-width : 430px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 45px;
+}
+.sponsored-by {
+     display: grid;
+     grid-template-columns: repeat(5,1fr);
+     gap: 95px;
+     margin-bottom: 100px;
+}
+.sponsored-by img {
+      filter: grayscale(100);
+}
+.hide {
+      display:none;
+}
 /* ------------------------------------RESPONSIVE -------------------------- */
 
 @media screen and (max-width:576px) {
@@ -207,19 +221,42 @@
             margin: 0;
             padding: 0;
           }
+          .teams {
+            height: auto;
+            
+          }
       .team-img-container {
             grid-template-columns: repeat(1,1fr);
       }
       .features {
             margin: 20px;
       }
+      .fact-info,
+      .sponsors {
+            text-align: center;
+            padding: 10px;
+            margin: 0px auto;
+      }
+      .fact-container {
+          grid-template-columns: repeat(1,1fr);
+          gap: 15px;
+          padding: 20px;
+      }
+      .fact-card {
+            width: 100%;
+      }
+      .sponsored-by {
+            grid-template-columns: repeat(1,1fr);
+            justify-items: center;
+      }
+
 
 }
 
 /*------------------------------- Mid-range devices---------------------- */
 
 @media screen and (min-width:576px) and (max-width:992px) {
-      
+   
       .banner, .navbar {
            margin: 0;
            padding: 0;
@@ -240,10 +277,6 @@
             flex-direction: column;
             width: 100vw;
             height: auto;
-          
-            
-            
-            
           }
           .features {
             width: 80%;
@@ -251,7 +284,28 @@
            align-items: flex-start;
 
           }
-          
-          
+           .fact-info {
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+           }
+          .fact-container {
+            grid-template-columns: repeat(2,1fr);
+            width: 80%;
+            gap: 30px;
+          }
+          .fact-card {
+            width:100%;
+          }
+          .sponsored-by {
+            
+            width: 70%;
+            margin: 45px auto;
+               grid-template-columns: repeat(2,1fr);
+               align-items: center;
+               justify-items: center;
+               gap: 50px;
+               
+          }          
           
 }  
