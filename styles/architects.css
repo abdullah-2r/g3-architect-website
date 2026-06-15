@@ -10,6 +10,7 @@
       margin: 0;
       padding: 0;
 }
+
  /*------------------------------- Template-CSS------------------------------- */
 .display-flex {
       display: flex;
@@ -35,8 +36,14 @@
       border-radius: 8px;
 
 }
-/* --------------------------------------------------------------------- */
 
+.section-title {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 17px;
+}
+/* --------------------------------------------------------------------- */
+/* --------------------------------HEADER SECTION--------------------------- */
 .navbar {
       padding: 15px;
       align-items: center;
@@ -47,7 +54,6 @@
       width: 1100px;
       margin: 0px auto;
 }
-
 
 .navbar > h2 {
       font-size: 1.8rem;
@@ -64,7 +70,7 @@
 }
  .banner-img {
       width: 1100px;
-       height: 500px;
+       height: auto;
        margin-bottom: 25px;
 }
 .banner-content {
@@ -85,9 +91,97 @@
       font-size: 10px;
       line-height: 16px;
 }
+
+/* --------------------------------------------------------------------------- */
+
+/*---------------------------------- MAIN SECTION-------------------------------- */
+/* ---------------------------------features section------------------------ */
+ main {
+      max-width: 1200px;
+      margin: 0 auto;
+ }
+ main > section {
+      margin-top: 80px;
+ }
+ .teams {
+      align-items: center;
+      gap: 55px;
+      height: 100vh;
+ }
+.team-img-container {
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 24px;
+}
+ .features {
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+}
+.feature-title {
+      font-size: 2.4rem;
+
+}
+
+#of-our {
+      font-weight: 700;
+}
+#feature-color {
+      color: #FF900E;
+}
+/* ---------------------------------------------------------------------- */
+
+/* --------------------------------some-facts section---------------------- */
+.some-facts {
+      height: 100vh;
+}
+
+.fact-description {
+      max-width: 450px;
+}
+
+.fact-container{
+      
+      max-width: 990px;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      margin: 85px auto;
+      
+     gap: 95px;
+      
+      
+}
+.fact-card {
+
+      flex-direction: column;
+      border: 1px solid #FF900E;
+      border-radius: 8px;
+      width: 100%;
+      height: 169px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+}
+.fact-value {
+      font-size: 38px;
+      font-weight: 600;
+}
+.fact  {
+      font-size: 13px;
+      font-weight: 600;
+}
+/* -------------------------------------------------------------------- */
+/* --------------------------------- SPONSOR-SECTION ----------------- */
+
+
+/* ------------------------------------RESPONSIVE -------------------------- */
+
 @media screen and (max-width:576px) {
 
-      .navbar, .nav-links {
+      .navbar, 
+      .nav-links,
+      .teams {
             flex-direction: column;
             justify-content: center;
             gap: 20px;
@@ -96,18 +190,68 @@
             padding: 0;
             
       }
-      .banner, .navbar {
-        width: 100vw;
+      .banner, 
+      .navbar {
+            max-width: 100vw;
         margin-bottom: 20px;
-        
+
       }
           .banner-content {
-            width: 100vw;
+            width: 100%;
             margin-bottom: 20px;
             line-height: 55px;
           }
           .banner-img {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+          }
+      .team-img-container {
+            grid-template-columns: repeat(1,1fr);
+      }
+      .features {
+            margin: 20px;
+      }
+
+}
+
+/*------------------------------- Mid-range devices---------------------- */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+      
+      .banner, .navbar {
+           margin: 0;
+           padding: 0;
+            width: 100vw;
+      }
+      
+      .navbar, .nav-links {
+            flex-direction: column;
+            gap: 15px;
+      }
+      .banner-img {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+          }
+          .teams {
+            flex-direction: column;
             width: 100vw;
             height: auto;
+          
+            
+            
+            
           }
-}
+          .features {
+            width: 80%;
+            margin: 0 auto;
+           align-items: flex-start;
+
+          }
+          
+          
+          
+}  
