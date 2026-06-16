@@ -96,7 +96,8 @@
 
 /*---------------------------------- MAIN SECTION-------------------------------- */
 /* ---------------------------------features section------------------------ */
- main {
+ main, 
+ footer {
       max-width: 1200px;
       margin: 0 auto;
  }
@@ -253,8 +254,15 @@
 .sponsored-by img {
       filter: grayscale(100);
 }
-.hide {
-      display:none;
+/* --------------------------------------------------------------------------- */
+/* ---------------------------footer section-------------------------------- */
+.footer-section {
+      text-align: center;
+      padding: 26px 0px;
+      margin-bottom: 120px;
+}
+.footer-description {
+      font-size: 12px;
 }
 /* ------------------------------------RESPONSIVE -------------------------- */
 
